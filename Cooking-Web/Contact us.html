@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Delicious Recipes</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('Home.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: 100% 100%;
+        color: white;
+        font-size: 17px;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 300px auto;
+    }
+    header {
+        color: white;
+        text-align:center;
+        padding: 1em;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        padding: 0.5em;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1em;
+    }
+    
+    section {
+        margin: 2em;
+    }
+    
+    .recipe {
+        border: 1px solid #ddd;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+    
+    footer {
+        color: white;
+        text-align: center;
+        padding: 1em;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .vertical-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px; 
+        margin: 0 auto; 
+    }
+    
+    .vertical-form label {
+        margin-bottom: 8px; 
+    }
+    
+    .vertical-form input,
+    .vertical-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px; 
+    }
+    
+    .vertical-form button {
+        padding: 10px;
+    }</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="Recipt Catatog.html">Recipe Catalog</a>
+            <a href="Contact us.html">Contact Us</a>
+        </nav>
+            <section>
+                <p>Have a question or feedback about our recipes? Feel free to leave your comments below:</p>
+                <form action="submit_feedback.php" method="post" class="vertical-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <input type="reset" value="Submit">
+                </form>
+            </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 Delicious Recipes. All rights reserved.</p>
+    </footer>   
+</body>
+</html>
