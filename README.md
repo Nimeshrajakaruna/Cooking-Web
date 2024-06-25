@@ -1,2 +1,3 @@
-# Cooking-Web
-Develop a cooking web site using HTML, CSS, JAVASCRIPT.
+# Cooking Web Site
+
+Develop a cooking website using HTML, CSS, and JAVASCRIPT.
